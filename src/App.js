@@ -9,6 +9,8 @@ import FancyBorder from "./components/FancyBorder";
 import WelcomeDialog from "./components/WelcomeDialog";
 import GoodbyeDialog from "./components/GoodbyeDialog";
 import SplitPane from "./components/SplitPane";
+import ContextApp from "./context/context-app";
+import CounterWithReducer from "./hooks/CounterWithReducer";
 
 class App extends Component {
     constructor(props) {
@@ -43,11 +45,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <FancyBorder color="red">
-                    <Header/>
-                    <SplitPane left={<WelcomeDialog/>} right={<GoodbyeDialog/>}/>
-                </FancyBorder>
-                {/*</>*/}
+                <ContextApp/>
+                <CounterWithReducer/>
             </div>
         );
     }
