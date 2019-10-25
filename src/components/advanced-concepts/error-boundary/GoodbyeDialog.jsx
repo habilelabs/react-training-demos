@@ -1,5 +1,5 @@
 import React from 'react';
-import Dialog from "./Dialog";
+import Dialog from "../hight-order-component/Dialog";
 import ErrorBoundary from "./ErrorBoundary";
 
 function GoodbyeDialog() {
